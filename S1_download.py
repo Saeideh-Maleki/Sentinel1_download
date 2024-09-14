@@ -108,7 +108,7 @@ for iii in tqdm(range(len(listd) - 1)):
                           #  task.start()  # Start the task
                             
                             # Export the results to your local drive
-                            df1 = geemap.ee_to_csv(meanDictionary, raw_output_path + f'/{img_name}.csv')
+                            df1 = geemap.ee_to_csv(meanDictionary, raw_output_path + f'/{full_img_name}.csv')
                             df_all.append(meanDictionary)
                 except Exception as e:
                     print(f"Error processing image {idx} in {orbit_pass} orbit for range {iii}: {e}")
